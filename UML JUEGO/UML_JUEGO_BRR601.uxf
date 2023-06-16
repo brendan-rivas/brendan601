@@ -1,0 +1,69 @@
+<diagram program="umletino" version="15.1"><zoom_level>11</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>0</x><y>396</y><w>231</w><h>209</h></coordinates><panel_attributes>Setup
+--
+-fondo_new: 
+-piso_new:
+-protagonista_new:
+-antagonista:
++puntos: Number=0
++puntos_box_new: 
+--
++setup();
++actualiza_puntos(): Event</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>726</x><y>396</y><w>231</w><h>275</h></coordinates><panel_attributes>Antagonista
+--
+-vel: int = 10
+-dir: Number = 1
+-limite_der: int = 520
+-limite_izq: int = 32
+-cambia: Timer = new Timer(200, 0)
+-tipo: Number
+-lanzar: Timer = new Timer(2000, 0)
++puntos2: Number =1
+
+--
++antagonista();
++cambia_dir(): TimerEvent
++actualiza(): Event
++lanza_bala(): TimerEvent
++inc_vel(): Event
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>363</x><y>396</y><w>231</w><h>209</h></coordinates><panel_attributes>Protagonista
+--
+-izq: Boolean = false
+-der: Boolean = false
+-vel: int = 10
+-lim_x_der: int  = 510 
+-lim_x_izq: int = 40 
+--
++protagonista();
++motor(): void
++controles();
++keydown(): void
++keyup(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1089</x><y>396</y><w>231</w><h>209</h></coordinates><panel_attributes>Bala
+--
+-vel: Number = 5
+--
++bala();
++mover(): event</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>495</x><y>0</y><w>231</w><h>209</h></coordinates><panel_attributes>MovieClip
+--
+
+
+
+
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>99</x><y>319</y><w>462</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10;400;10</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>319</y><w>693</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>610;70;610;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>605</x><y>198</y><w>253</w><h>220</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>210;180;210;120;10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>462</x><y>319</y><w>33</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>946</x><y>495</y><w>165</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>495</y><w>165</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>583</x><y>495</y><w>165</w><h>33</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>130;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>484</y><w>165</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>583</x><y>484</y><w>165</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=∞
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>946</x><y>484</y><w>165</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=∞
+</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>594</y><w>704</w><h>143</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>620;70;620;110;10;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>693</y><w>704</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;620;20</additional_attributes></element><element><id>Relation</id><coordinates><x>88</x><y>594</y><w>1133</w><h>176</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>1010;10;1010;140;10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>88</x><y>726</y><w>1133</w><h>55</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1
+</panel_attributes><additional_attributes>10;20;1010;20</additional_attributes></element></diagram>
